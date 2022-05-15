@@ -788,8 +788,6 @@
 /* Back to top */
 .backtotop {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
   width: 50px;
   height: 50px;
   background: #189a46;
@@ -797,7 +795,6 @@
   line-height: 50px;
   text-align: center;
   display: block;
-  position: fixed;
   right: 15px;
   bottom: 15px;
   color: #fff;
