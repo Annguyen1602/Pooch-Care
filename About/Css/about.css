@@ -265,6 +265,163 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
+/* choose-us */
+.choose-us {
+  padding: 48px 0;
+}
+.choose-us .cover {
+  display: flex;
+  flex-wrap: wrap;
+}
+.choose-us .cover .content-left img {
+  width: 100%;
+  border-radius: 10px;
+}
+.choose-us .content-left {
+  text-align: right;
+  padding: 0 24px 0 15px;
+}
+.choose-us .content-right {
+  padding: 0 15px 0 24px;
+}
+.choose-us .cover .title {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f53626;
+}
+.choose-us .cover h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.choose-us .cover p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+}
+.choose-us .row-content {
+  display: flex;
+}
+.choose-us .row-content .right-icon {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.choose-us .row-content .right-icon .icon {
+  color: #189a46;
+  font-size: 44px;
+  text-align: center;
+}
+.choose-us .row-content .right-icon .icon-change {
+  padding: 0 10px;
+}
+.right-icon .icon i {
+  margin-top: 4px;
+  vertical-align: super;
+}
+.choose-us .content-right .text-right a {
+  text-align: left;
+  margin-bottom: 0;
+  color: #000c04;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+}
+.choose-us .content-right .text-right a:hover {
+  color: #189a46;
+}
+/* our team*/
+.our-team {
+  background-color: #f9f8fd;
+}
+.our-team .title-content h6 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: #f53626;
+  text-align: center;
+}
+.our-team .title-content .txt {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.our-team .team-row .team {
+  margin-bottom: 44px;
+}
+
+.our-team .team-row .team .team-info:hover h3 a {
+  color: #189a46;
+}
+.our-team .team-row .team a {
+  transition: transform 0.3s linear;
+}
+.our-team .team-row .team .team-info:hover img {
+  transform: scale(1.1);
+}
+.our-team .team-row .team img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s linear;
+  height: auto;
+  border-radius: 10px;
+}
+.our-team .column h3 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.our-team .column p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #696969;
+}
+.our-team .column {
+  overflow: hidden;
+}
+.our-team .column h3 a {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000c04;
+  font-weight: 600;
+}
+
+.our-team .column .social {
+  margin-top: 16px;
+}
+.our-team .column .social a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  background: rgba(147, 107, 232, 0.05);
+  color: #189a46;
+}
+.our-team .column .social a:hover {
+  background: #189a46;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.our-team .column .social i {
+  font-size: 12px;
+  line-height: 30px;
+  display: block;
+}
 
 /* Footer */
 .footer {
@@ -351,4 +508,66 @@
 }
 body .backtotop i {
   color: #fff;
+}
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .header .navbar-toggler {
+    display: block;
+    margin-left: 20px;
+    padding: 5px 8px;
+  }
+  .under .total .content {
+    flex-wrap: wrap;
+  }
+  .under .content_left {
+    padding: 0 15px;
+  }
+  .under .content_right {
+    margin-top: 48px;
+    padding: 0 15px;
+  }
+  .choose-us .content-left {
+    text-align: left;
+  }
+  .choose-us .content-right {
+    margin-top: 50px;
+  }
+  .choose-us .row-content .right-icon .icon-change {
+    padding: 0 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .choose-us .row-content {
+    display: block;
+  }
+  .choose-us .row-content .text-right {
+    text-align: center;
+  }
+  .footer .information {
+    display: block;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .choose-us .row-content {
+    display: block;
+  }
+  .choose-us .row-content .text-right {
+    text-align: center;
+  }
+
+  .footer .information .cover {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
